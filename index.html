@@ -6,7 +6,9 @@
 	<script type = "text/javascript">
          function pageScroll() {
    	 window.scrollBy(0,1);
-  	 scrolldelay = setTimeout(pageScroll,10);}
+  	 scrolldelay = setTimeout(pageScroll,100);
+	 await delay(3000);
+	 window.scrollTo({ top: 0, behavior: 'smooth' });}
 	</script>
 	<script>
   	window.dataLayer = window.dataLayer || [];
